@@ -458,9 +458,7 @@ var isBountyOwner = function(result) {
   if (typeof web3 == 'undefined') {
     return false;
   }
-  if (typeof web3.eth == 'undefined') {
-    return false;
-  }
+  
   if (typeof web3.eth.coinbase == 'undefined' || !web3.eth.coinbase) {
     return false;
   }
